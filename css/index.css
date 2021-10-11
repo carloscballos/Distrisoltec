@@ -1,0 +1,31 @@
+body{
+    font-family: sans-serif;
+}
+#encabezado{
+    background-color: #354b9b;    
+}
+h4{
+   color: #354b9b;
+}
+#franja{
+    background-color: #354b9b;
+}
+.servicio{
+    background-color: rgb(233, 233, 233);    
+    -webkit-transition: -webkit-transform 0.2s ease-in-out 0.1s;
+    height: 400px;
+}
+.servicio:hover{
+    -webkit-transform: scale(1.05);
+    box-shadow: #aaaaa7 3px 3px 10px;
+}
+#separador{
+    background-color: #354b9b;
+}
+footer{
+    background-color: #354b9b;
+}
+#tecnologias{
+    background-color: #F0F0EB;
+}
+
