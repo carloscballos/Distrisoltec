@@ -25,3 +25,9 @@ footer{
 .rieles{
     background-color: rgb(233, 233, 233);;
 }
+.barraLateral{
+    width: 18%;
+}
+.vitrina{
+    width: 82%;
+}
