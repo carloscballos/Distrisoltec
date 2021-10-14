@@ -12,7 +12,7 @@ $(function () {
 
 $(function(){
     $('#hora').clockpicker({
-
+        donetext: "<b>"+'Hecho'+"</b>"
     }
     )
 })
