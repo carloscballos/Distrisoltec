@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/Bootstrap 5.2.css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css"> 
     <script src="js/Bootstrap 5.2.js/bootstrap.js"></script>
+    <script async src='https://www.google.com/recaptcha/api.js?hl=es'></script>
     <title>Contacto - Distrisoltec</title>
 </head>
 <body>
@@ -54,7 +55,11 @@
                     <img class="img-fluid" width="70%" src="Imagenes/twich.png" alt="">
                 </a>
             </li>            
-        </ul>                    
+        </ul>
+        <div class="m-auto">
+            <a class="btn text-white" href="inicioSesion.html">Iniciar Sesión</a>
+            <a class="btn text-white" href="registro.html">Registrate</a>
+        </div>               
     </div>
     <header>
         <div class="navbar navbar navbar-expand-md">
@@ -126,7 +131,8 @@
                     <textarea class="form-control" required name="descripcion" rows="5" placeholder="Cuentanos sobre tu proyecto"></textarea>               
                     <br>
                     <p class="text-primary">*Campos Obligatorios.</p>                         
-                </div>      
+                </div>
+                <div id="recaptcha" class="g-recaptcha" data-sitekey="Clave del sitio"></div>      
                 <input type="submit" class="btn btn-primary" onclick="return validaciones(this.form)" value="Continuar">                   
             </form>
         </div>

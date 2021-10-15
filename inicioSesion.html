@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/Bootstrap 5.2.js/bootstrap.js"></script>
-    <script src="js/Bootstrap Datepicker 1.9.js/js/bootstrap-datepicker.js"></script>
-    <script src="js/Bootstrap Datepicker 1.9.js/locales/bootstrap-datepicker.es.min.js"></script>
-    <script src="js/Bootstrap Clockpicker/jquery-clockpicker.js"></script>
-    <script src="js/scripts.js"></script>
-    <script async src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="desarollo web y muchos servicios mas">
+    <meta name="keywords" content="Distrisoltec,desarrollo web,apple,power platform">
+    <meta name="author" content="Carlos Enrique Ceballos Camacho">
+    <meta name="copyrigth" content="Distrisoltec">
+    <meta namr="robot" content="index">
+    <script src="js/Bootstrap 5.2.js/bootstrap.js"></script>    
     <link rel="stylesheet" href="css/Bootstrap 5.2.css/bootstrap.css">
-    <link rel="stylesheet" href="css/Bootstrap datepicker 1.9.css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/Bootstrap clockpicker/jquery-clockpicker.css">
+    <link rel="stylesheet" href="css/index.css"> 
     <title>Distrisoltec - Soluciones Tecnológicas</title>
 </head>
 <body>
@@ -48,7 +45,7 @@
                 </a>
             </li>            
             <li class="nav-item" style="width: 30px;">
-                <a href="#" target="_Blank" >
+                <a href="https://github.com/Distrisoltec" target="_Blank" >
                     <img class="img-fluid" width="70%" src="Imagenes/github.png" alt="">
                 </a>
             </li>            
@@ -65,7 +62,7 @@
         </ul>                    
     </div>
     <header>
-        <div class="navbar navbar navbar-expand-md">
+        <div class="navbar navbar-expand-md">
             <span class="justify-content-center col-12 col-md-3">
                 <img class="bg-white img-fluid" src="Imagenes/Mesa de trabajo 11.png" alt="">                
             </span> 
@@ -93,40 +90,8 @@
             </div>
         </div>
     </header>    
-    <section>
-        <section>
-            <div class="py-2 bg-light">
-                <div class="col-8 col-sm-8 col-md-5 m-auto">
-                    <h2 class="text-center">Agenda tu Visita</h2>     
-                    <form action="visitas.php" method="POST">
-                        <div class="form-group">                            
-                            <label for="nombre"><b>Nombre*</b></label>
-                            <input type="text" name="nombre" class="form-control" required placeholder="Nombre">                                                       
-                            <label for="nombre"><b>Razón Social</b></label>
-                            <input type="text" name="razonSocial" class="form-control" required placeholder="razon Social">                          
-                            <label for="correo"><b>Correo Electrónico*</b></label>
-                            <input type="email" name="email" class="form-control" placeholder="Correo electrónico">
-                            <label for="contrasena"><b>Número de Contacto*</b></label>
-                            <input type="number" name="telefono" class="form-control" placeholder="Número de Contacto">
-                            <label for="contrasena"><b>Feha cita</b></label>
-                            <input type="text" name="fecha" autocomplete="off" class="form-control" id="agenda" placeholder="DD/MM/YYYY" readonly>                                
-                            <label for=""><b>Hora Cita</b></label>
-                            <input type="text" name="hora" autocomplete="off" id="hora" class="form-control" placeholder="HH:MM" readonly>                                
-                            <label for="">Direccion de Visita</label>
-                            <input type="text" name="direccion" class="form-control">
-                            <label for="contrasena"><b>Motivo visita</b></label>
-                            <textarea class="form-control" name="observacion" rows="5"></textarea>                                                     
-                            <p class="text-primary">*Campos Obligatorios.</p>
-                            <div id="recaptcha" class="g-recaptcha" data-sitekey="6LdtgNIcAAAAANOJ9oqKnfjFvCTdBf33LlctXpCe"></div>                        
-                        </div>      
-                        <input type="submit" class="btn btn-primary" onclick="return validaciones(this.form)" value="Continuar">      
-                    </form>
-                </div>
-            </div>      
-        </section>
-    </section>    
     <footer>
-        <div class="row row-cols-2 row-cols-sm-4 container pt-3 mt-3">
+        <div class="row row-cols-1 row-cols-sm-4 container pt-3 mt-3">
             <div class="list-group">
                 <a href="index.html" class="text-decoration-none text-white text-center">
                     <h2>Distrisoltec</h2>
@@ -138,27 +103,35 @@
                     info@distrisoltec.com
                 </a>
             </div>
-            <div class="list-group">
-                <a href="servicios.html" class="text-decoration-none text-white"> 
-                    <h2>Servicios</h2>
-                </a>
-                <a href="powerPlatform.html" class="text-decoration-none text-white">Power Platform</a>                
-                <a href="apple.html" class="text-decoration-none text-white mt-1">Apple</a>                
-                <a href="redes.html" class="text-decoration-none text-white mt-1">Redes</a>                
-                <a href="desarrolloweb.html" class="text-decoration-none text-white mt-1">Desarrollo Web</a>                
-                <a href="venta.html" class="text-decoration-none text-white mt-1">Venta</a>                
-                <a href="soporte.html" class="text-decoration-none text-white mt-1">Soporte Tecnico</a>                
+            <div class="list-group navbar-expand-md">
+                <h2 class="text-white" data-bs-toggle="collapse" aria-expanded="false" aria-controls="#serviciosFooter" data-bs-target="#serviciosFooter">
+                    Servicios
+                </h2>
+                <div class="row collapse navbar-collapse" id="serviciosFooter">       
+                    <a href="powerPlatform.html" class="text-decoration-none text-white">Power Platform</a>                
+                    <a href="apple.html" class="text-decoration-none text-white mt-1">Apple</a>                
+                    <a href="redes.html" class="text-decoration-none text-white mt-1">Redes</a>                
+                    <a href="desarrolloweb.html" class="text-decoration-none text-white mt-1">Desarrollo Web</a>                
+                    <a href="venta.html" class="text-decoration-none text-white mt-1">Venta</a>                
+                    <a href="soporte.html" class="text-decoration-none text-white mt-1">Soporte Tecnico</a>                
+                </div>    
             </div>        
-            <div class="list-group">
-                <h2 class="text-white">Compañia</h2>                
-                <a href="somos.html" class="text-decoration-none text-white">Quienes Somos</a>                
-                <a href="blog.html" class="text-decoration-none text-white mt-1">Blog</a>
-                <a href="#" class="text-decoration-none text-white mt-1">Terminos y Condiciones</a>
-                <a href="#" class="text-decoration-none text-white mt-1">Tratamiento de Datos</a>
+            <div class="list-group navbar-expand-md">
+                <h2 class="text-white" data-bs-toggle="collapse" aria-expanded="false" aria-controls="#compañiaFooter" data-bs-target="#compañiaFooter">
+                    Compañia
+                </h2>
+                <div class="row collapse navbar-collapse" id="compañiaFooter">                
+                    <a href="somos.html" class="text-decoration-none text-white">Quienes Somos</a>                
+                    <a href="blog.html" class="text-decoration-none text-white mt-1">Blog</a>
+                    <a href="#" class="text-decoration-none text-white mt-1">Terminos y Condiciones</a>
+                    <a href="#" class="text-decoration-none text-white mt-1">Tratamiento de Datos</a>
+                </div>
             </div>        
-            <div class="list-group">                
-                <h2 class="text-decoration-none text-white" >Nuestras Redes</h2>
-                <div >
+            <div class="list-group navbar-expand-md">                
+                <h2 class="text-decoration-none text-white" data-bs-toggle="collapse" aria-expanded="false" aria-controls="#redesFooter" data-bs-target="#redesFooter">
+                    Nuestras Redes
+                </h2>
+                <div class="row collapse navbar-collapse" id="redesFooter" >
                     <ul class="navbar list-unstyled  px-2 m-auto h-auto">
                         <li class="nav-item" style="width: 30px;">
                             <a href="https://www.facebook.com/Distrisoltectec-286891133150465/" target="_blank">
@@ -176,7 +149,7 @@
                             </a>
                         </li>            
                         <li class="nav-item" style="width: 30px;">
-                            <a href="#" target="_Blank" >
+                            <a href="https://github.com/Distrisoltec" target="_Blank" >
                                 <img class="img-fluid" width="70%" src="Imagenes/github.png" alt="">
                             </a>
                         </li>            

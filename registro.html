@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Bootstrap 5.2.css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/Bootstrap 5.2.js/bootstrap.js"></script>
+    <script async src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+    <script src="js/scripts.js"></script>
     <title>Registro - Distrisoltec</title>
 </head>
 <body>
@@ -91,22 +94,33 @@
                 <h2 class="text-center">Registro</h2>     
                 <form action="formReg.php" method="POST">
                     <div class="form-group">
-                        <label for="nombre"><b>Nombre*</b></label>
+                        <label class="form-label" for="nombre"><b>Nombre*</b></label>
                         <input type="text" name="nombre" class="form-control" required placeholder="Nombre">
                         <br>
-                        <label for="nombre"><b>Razón Social</b></label>
-                        <input type="text" name="razonSocial" class="form-control" required placeholder="razon Social">
+                        <label for="razon"><b>Razón Social</b></label>
+                        <input type="text" name="razonSocial" class="form-control" placeholder="razon Social">
                         <br>
                         <label for="correo"><b>Correo Electrónico*</b></label>
                         <input type="email" name="email" class="form-control" placeholder="Correo electrónico">
-                        <span id="errorcorreo" class="error text-danger"></span>
+                        <span id="errorEmail" class="error text-danger"></span>
                         <br>
-                        <label for="contrasena"><b>Número de Contacto*</b></label>
-                        <input type="number" name="telefono" class="form-control" placeholder="Número de Contacto">
-                        <span id="errorcontrasena" class="error text-danger"></span>
-                        <br>                                                         
+                        <label for="numero"><b>Número de Contacto*</b></label>
+                        <input type="number" name="telefono" class="form-control" required placeholder="Número de Contacto">
+                        <span id="errorNumero" class="error text-danger"></span>
+                        <br>
+                        <label class="form-label" for=""><b>Contraseña*</b></label>
+                        <input class="form-control" type="password" required name="contrasena">
+                        <span id="errorContrasena" class="error text-danger"></span>                                                         
+                        <br>
+                        <label class="form-label" for=""><b>Repetir Contraseña*</b></label>
+                        <input class="form-control" type="password" required name="repContrasena">
+                        <span id="errorRepContrasena" class="error text-danger"></span>                                                      
+                        <br>
+                        <div class="g-recaptcha" data-sitekey="6LdtgNIcAAAAANOJ9oqKnfjFvCTdBf33LlctXpCe" id="recaptcha"></div>
                         <label for="terminos">
-                        <input type="checkbox" name="terminos" id="terminos" value="acepta"><b> Acepta los Términos y Condiciones*</b></label>
+                            <input type="checkbox" name="terminos" id="terminos" value="acepta" required>
+                                <b> Acepta los Términos y Condiciones*</b>
+                        </label>
                         <br>
                         <span id="errorterminos" class="error text-danger"></span>
                         <br>
@@ -117,6 +131,7 @@
             </div>
         </div>      
     </section>
+    
     <footer>
         <div class="row row-cols-2 row-cols-sm-4 container pt-3 mt-3">
             <div class="list-group">

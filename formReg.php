@@ -1,17 +1,13 @@
-<?php    
-    $conexion = mysqli_connect("localhost","root","","distrisoltec");
-    if(!$conexion){
-        echo"Conexion Erronea";
-    }else{
-        echo"Conexion Realizada Satisfactoriamente";
-        }
+<?php
+    include("../Distrisoltec/conexion.php");
     $nombre = $_POST["nombre"];          
     $razon = $_POST["razonSocial"];        
     $correo = $_POST["email"];          
-    $numero = $_POST["telefono"];       
+    $numero = $_POST["telefono"];
+    $contrasena = $_POST["contrasena"];
     $terminos = $_POST["terminos"];          
-    $insertsql = "INSERT INTO usuarios(nombre,razonSocial,correoElectronico,numeroContacto,terminos) 
-    VALUES ('$nombre','$razon','$correo','$numero','$terminos')";
+    $insertsql = "INSERT INTO usuarios(nombre,razonSocial,correoElectronico,numeroContacto,contrasena,terminos) 
+    VALUES ('$nombre','$razon','$correo','$numero','$contrasena','$terminos')";
     $resultado = mysqli_query($conexion,$insertsql);
     if($resultado){
         echo"<script>alert('Se creo el registro correctamente'); window.location='registro.html'</script>";
