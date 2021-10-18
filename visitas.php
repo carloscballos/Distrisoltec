@@ -1,10 +1,5 @@
 <?php    
-    $conexion = mysqli_connect("localhost","root","","distrisoltec");
-    if(!$conexion){
-        echo"Conexion Erronea";
-    }else{
-        echo"Conexion Realizada Satisfactoriamente";
-        }
+    include("../Distrisoltec/conexion.php");
     $nombre = $_POST["nombre"];          
     $razon = $_POST["razonSocial"];        
     $correo = $_POST["email"];          

@@ -1,31 +1,3 @@
-$(document).ready(function(){
-  $('.cinta').slick({
-  slidesToShow: 3,  
-  centerMode: true,
-  autoplay: true,
-  autoplaySpeed: 1000,
-  arrows: false
-  });
-});
-$(function () {
-  $("#agenda").datepicker({        
-      format: "dd/mm/yyyy",
-      todayBtn: 'linked',
-      language: "es",
-      todayHighlight: true,
-      daysOfWeekDisabled: "0",
-      autoclose: true,
-      datesDisabled: ['18/10/2021','01/11/2021','15/11/2021','08/12/2021','25/12/2021']
-  });
-});
-
-$(function(){
-  $('#hora').clockpicker({
-      donetext: "<b>"+'Hecho'+"</b>"
-  }
-  )
-});
-
 var re = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
 var contra = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 function limpiarErrores(){
