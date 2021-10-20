@@ -19,7 +19,7 @@
         <div class="navbar px-2 m-auto">
             <span class="nav-item text-white text-center col-6">
                 <img width="10%" src="Imagenes/telefono.png">          
-                (4) xxx-xx-xx
+                (+57) 322 582-7443
             </span>
             <span class="nav-item text-light text-center col-6">
                 <img width="12%" src="Imagenes/logo.png">          
@@ -45,7 +45,7 @@
                 </a>
             </li>            
             <li class="nav-item" style="width: 30px;">
-                <a href="https://github.com/Distrisoltec" target="_Blank" >
+                <a href="#" target="_Blank" >
                     <img class="img-fluid" width="70%" src="Imagenes/github.png" alt="">
                 </a>
             </li>            
@@ -59,18 +59,22 @@
                     <img class="img-fluid" width="70%" src="Imagenes/twich.png" alt="">
                 </a>
             </li>            
-        </ul>                    
+        </ul>
+        <div class="m-auto">
+            <a class="btn text-white" href="inicioSesion.html">Iniciar Sesión</a>
+            <a class="btn text-white" href="registro.html">Registrate</a>
+        </div>               
     </div>
     <header>
-        <div class="navbar navbar-expand-md">
-            <span class="justify-content-center col-12 col-md-3">
+        <div class="navbar navbar-expand-md container">
+            <span class="text-center col-12 col-md-3">
                 <img class="bg-white img-fluid" src="Imagenes/Mesa de trabajo 11.png" alt="">                
             </span> 
             <button type="button" class="navbar-toggler navbar-light" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
                 <span class="navbar-toggler-icon"></span>            
             </button>                    
             <div id="MenuNavegacion" class="collapse navbar-collapse">                
-                <ul class="navbar-nav card-body mt-4 justify-content-center container-fluid">
+                <ul class="navbar-nav mt-4 justify-content-end container-fluid">
                     <li class="nav-item mx-2">
                         <a class="nav-link text-primary" href="index.html"><h4>Inicio</h4></a>
                     </li>
@@ -91,18 +95,20 @@
         </div>
     </header>
     <section>
-        <form action="inicioSesion.php" method="post">
-            <div class="form-">
-                <label class="form-label">Usuario</label>
-                <input class="form-control" type="text" name="usuario" placeholder="nombre de usuario">
+        <div class="bg-light">
+            <h2 class="text-center">Inicio de Sesion</h2>
+            <form class="col-8 col-sm-8 col-md-5 m-auto" action="inicioSesion.php" method="post">            
+                <label class="form-label">Correo Electronico</label>
+                <input class="form-control" type="text" name="usuario" placeholder="ejemplo@ejemplo.com">
                 <label class="form-label">Contraseña</label>
-                <input class="form-control" type="text" name="contrasena" placeholder="contraseña">
-            </div>
-            <input type="submit" value="ingresar">
-        </form>
+                <input class="form-control" type="passwordb" name="contrasena" placeholder="contraseña">
+                <br>        
+                <input class="btn btn-primary " type="submit" value="ingresar">
+            </form>
+        </div>
     </section>   
     <footer>
-        <div class="row row-cols-1 row-cols-sm-4 container pt-3 mt-3">
+        <div class="row row-cols-1 row-cols-sm-4 container-fluid pt-3 mt-3">
             <div class="list-group">
                 <a href="index.html" class="text-decoration-none text-white text-center">
                     <h2>Distrisoltec</h2>
@@ -143,7 +149,7 @@
                     Nuestras Redes
                 </h2>
                 <div class="row collapse navbar-collapse" id="redesFooter" >
-                    <ul class="navbar list-unstyled  px-2 m-auto h-auto">
+                    <ul class="navbar list-unstyled">
                         <li class="nav-item" style="width: 30px;">
                             <a href="https://www.facebook.com/Distrisoltectec-286891133150465/" target="_blank">
                                 <img class="img-fluid" width="70%" src="Imagenes/facebook.png" alt="">
@@ -185,6 +191,6 @@
         <div class="container-fluid p-1">                
             <p class="text-light text-center m-auto"><b>© 2021 | DISTRISOLTEC |Todos los Derechos Reservados</b></p>
         </div>      
-    </footer>    
+    </footer>      
 </body>
 </html>
