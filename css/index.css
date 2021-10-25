@@ -23,11 +23,12 @@ footer{
     background-color: #354b9b;
 }
 .rieles{
-    background-color: rgb(233, 233, 233);;
+    background-color: rgb(233, 233, 233);
 }
 .tarjetaRot{
     position: relative;
     display: inline-block;
+    
 }
 .textPri {
     vertical-align: bottom;
@@ -39,27 +40,28 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(36, 62, 206, 0.6);
-    color: #fff;
+    background: rgb(233, 233, 233);
+    color: black;
     visibility: hidden;
-    opacity: 0;
+    opacity:0;
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    /* transition effect. not necessary */
     transition: opacity .2s, visibility .2s;
 }
 .tarjetaRot:hover .textContSec {
     visibility: visible;
-    opacity: 1;
- }
+    opacity: 0.97;
+}
 .textSec {
     transition: .2s;
     transform: translateY(1em);
     text-align: center;
- }
+}
 .tarjetaRot:hover .textSec {
     transform: translateY(0);
- }
+}
+.icono{
+    width: 50%;
+}
 
