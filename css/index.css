@@ -65,4 +65,10 @@ footer{
 .icono{
     width: 50%;
 }
-
+.valores{
+    border-radius: 25px 25px;
+    box-shadow: 5px 5px 10px 10px rgb(233, 233, 233); black;
+}
+.principal{
+    font-size: 1.5rem;
+}
