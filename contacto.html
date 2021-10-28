@@ -136,7 +136,7 @@
     <section>
         <h2 class="franja text-white text-center mt-3">Contáctate con nosotros</h2>
         <div class="container">
-            <form class="col-10 col-sm-6 m-auto mb-3">
+            <form action="envioCorreo.php" method="post" class="col-10 col-sm-6 m-auto mb-3">
                 <div class="form-group">                
                     <input type="text" name="nombre" class="form-control" required placeholder="Nombre*">                
                     <br>
@@ -144,7 +144,7 @@
                     <br>
                     <input type="number" name="telefono" class="form-control" required placeholder="Telefono*">                
                     <br>
-                    <input type="text" name="compañia" class="form-control" placeholder="Compañia">
+                    <input type="text" name="compania" class="form-control " placeholder="Compañia">
                     <br>
                     <textarea class="form-control" required name="descripcion" rows="5" placeholder="Cuentanos sobre tu proyecto"></textarea>               
                     <br>
